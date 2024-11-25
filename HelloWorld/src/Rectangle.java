@@ -12,6 +12,18 @@ public class Rectangle {
 
     }
 
+    public boolean equals(Object o) {
+        boolean result = false;
+        // Only going to compare fields if the other
+        // object is a Rectangle
+        if (o instanceof Rectangle) {
+            result = this.length == ((Rectangle) o).length &&
+                    this.width == ((Rectangle) o).length;
+        }
+
+        return result;
+    }
+
     public String toString() {
         // String.format returns a string, doesn't print the string
         return String.format("Length is %.4f, width is %.4f", length, width);

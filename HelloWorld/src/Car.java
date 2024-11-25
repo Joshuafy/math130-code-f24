@@ -18,6 +18,11 @@ public class Car extends Vehicle {
         this.mileage = mileage;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return false;
+    }
+
     public double getMileage() {
         return mileage;
     }
