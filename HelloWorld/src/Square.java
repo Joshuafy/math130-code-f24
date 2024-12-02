@@ -1,4 +1,9 @@
-public class Square {
+import java.util.ArrayList;
+
+public class Square
+                               // This implements the Comparable interface
+                               // working only on Square types
+{
     private double length;
     private double area;
 
@@ -25,4 +30,12 @@ public class Square {
         // not the parameter length
         return this.length;
     }
+
+    // if Comparable uses Object as its type, then EVERY compareTo
+    // method has to work on object
+    public int compareTo(Square s) {
+        ArrayList<Integer> n = new ArrayList<Integer>();
+        return 0;
+    }
+
 }
